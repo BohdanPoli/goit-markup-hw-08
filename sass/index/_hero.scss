@@ -2,7 +2,7 @@
 
 .hero {
   background-color: var(--mainbackground);
-  padding: 200px 0;
+  padding: 118px 0px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -14,14 +14,23 @@
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
+
 .hero__container {
   @include centerflex($dir: column, $jus: null);
 }
 
 .hero__title {
-  @include fontstyle(44px, 900, 1.36, 0.06em, center);
+  @include fontstyle(26px, 900, 1.61, 0.06em, center);
   text-transform: uppercase;
   color: var(--primewhite);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include fontstyle(44px, 900, 1.36, 0.06em, center);
+  }
 }

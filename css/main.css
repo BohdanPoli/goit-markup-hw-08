@@ -984,7 +984,7 @@ body {
 /* Hero section */
 .hero {
   background-color: var(--mainbackground);
-  padding: 200px 0;
+  padding: 118px 0px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-image.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image.jpg);
   background-repeat: no-repeat;
@@ -992,6 +992,11 @@ body {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__container {
@@ -1008,14 +1013,23 @@ body {
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--primewhite);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
 }
 
 /* Benefits section  */
