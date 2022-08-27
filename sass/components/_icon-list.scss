@@ -1,0 +1,27 @@
+.icon-list {
+  @include centerflex();
+
+  gap: 10px;
+}
+
+.icon-list__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @include centerflex();
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.icon-list__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .icon-list__link:hover &,
+  .icon-list__link:focus & {
+    fill: var(--primewhite);
+  }
+}

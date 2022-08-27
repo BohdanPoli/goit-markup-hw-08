@@ -1,0 +1,15 @@
+.button {
+  @include fontstyle(16px, 700, 1.88, 0.06em);
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--hoverbutton);
+    cursor: pointer;
+  }
+}

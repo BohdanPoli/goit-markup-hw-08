@@ -1,0 +1,64 @@
+/* Projects section  */
+
+.projects {
+  padding: 94px 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-list__item {
+  width: 370px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.projects-list__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .projects-list__link:hover & {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+.overlay__text {
+  @include fontstyle(18px, null, 1.5, 0.03);
+  padding: 63px 24px;
+
+  color: var(--primewhite);
+}
+
+.meta {
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
+}
+
+.meta__title {
+  @include fontstyle(18px, null, 2, 0.06em);
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+
+.meta__type {
+  @include fontstyle(16px, null, 1.88, null);
+  color: var(--text-color);
+}

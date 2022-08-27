@@ -1,0 +1,36 @@
+/* WeDo title  */
+
+.wedo {
+  padding-bottom: 94px;
+}
+.wedo__title {
+  @include fontstyle(36px, null, 1.16, null, center);
+  margin-bottom: 50px;
+}
+.wedo__list {
+  @include centerflex();
+}
+.wedo__item {
+  position: relative;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.above-wrapper {
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+}
+
+.above-wrapper__text {
+  @include fontstyle(14px, null, 0.875, 0.03em, center);
+
+  text-transform: uppercase;
+
+  color: var(--primewhite);
+
+  padding: 27px 0;
+
+  display: block;
+}

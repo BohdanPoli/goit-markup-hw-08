@@ -1,0 +1,39 @@
+/* Our Team section  */
+
+.team {
+  padding: 94px 0;
+  background: #f5f4fa;
+}
+
+.team__title {
+  @include fontstyle(36px, null, 1.16, null, center);
+  margin-bottom: 50px;
+}
+.team__list {
+  @include centerflex();
+}
+
+.team__item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.employee-wrapper {
+  padding: 30px;
+}
+
+.team__name {
+  @include fontstyle(16px, 500, 1.18, null, center);
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.team__specialty {
+  @include fontstyle(16px, null, 1.18, null, center);
+  color: var(--text-color);
+  margin-bottom: 16px;
+}

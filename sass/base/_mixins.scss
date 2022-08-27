@@ -1,0 +1,20 @@
+//  font-size: 36px;
+// font-weight: 400;
+//   line-height: 0.85;
+//   letter-spacing: 0.03em;
+//   text-align: center;
+
+@mixin fontstyle($fs, $fw, $lh, $ls, $ta: null) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-align: $ta;
+}
+
+@mixin centerflex($dis: flex, $dir: null, $jus: center, $ali: center) {
+  display: $dis;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+}
