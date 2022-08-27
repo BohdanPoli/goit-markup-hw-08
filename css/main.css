@@ -277,6 +277,9 @@ summary {
 /* Presettings for tegs */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 h1,
@@ -325,11 +328,25 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .logo {
@@ -721,6 +738,12 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-btn {
+    display: none;
+  }
+}
+
 /* CURRENT */
 .current {
   position: relative;
@@ -1047,6 +1070,11 @@ body {
 .wedo {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 767px) {
+  .wedo {
+    display: none;
+  }
+}
 
 .wedo__title {
   font-size: 36px;
@@ -1150,16 +1178,30 @@ body {
 
 /* Clients-section  */
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__title {
-  font-size: 36px;
-  line-height: 0.85;
+  color: var(--title-color);
+  font-size: 28px;
+  line-height: 0.84;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 0.85;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -1169,14 +1211,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.clients__item {
+  width: calc((100% - 60px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;

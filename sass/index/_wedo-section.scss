@@ -2,7 +2,11 @@
 
 .wedo {
   padding-bottom: 94px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
+
 .wedo__title {
   @include fontstyle(36px, null, 1.16, null, center);
   margin-bottom: 50px;
