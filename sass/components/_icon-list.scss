@@ -1,9 +1,7 @@
 .icon-list {
   @include centerflex();
-
   gap: 10px;
 }
-
 .icon-list__link {
   width: 44px;
   height: 44px;
