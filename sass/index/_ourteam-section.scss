@@ -20,8 +20,8 @@
 }
 
 .team__list {
-  display: flex;
-  justify-content: center;
+  @include centerflex($ali: null);
+
   flex-wrap: wrap;
   gap: 30px;
 
