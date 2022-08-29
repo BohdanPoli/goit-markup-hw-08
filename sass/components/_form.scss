@@ -96,10 +96,13 @@
 }
 
 .accept__text {
-  @include fontstyle(14px, 400, 1.71, 0.03em);
+  @include fontstyle(12px, 400, 1.71, 0.03em);
   margin-left: 9px;
 
   color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .accept__conditions {
