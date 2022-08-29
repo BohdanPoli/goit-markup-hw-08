@@ -99,12 +99,18 @@
           <h2 class="wedo__title">Чим ми займаємося</h2>
           <ul class="wedo__list">
             <li class="wedo__item">
-              <img
-                src="./images/wedo1.jpg"
-                alt="робота над дизайном"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/wedo1-1x.jpg 1x, ./images/wedo1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/wedo1-1x.jpg"
+                  alt="член команди"
+                />
+              </picture>
 
               <div class="above-wrapper">
                 <b class="above-wrapper__text">Десктопні додатки</b>
@@ -112,24 +118,36 @@
             </li>
 
             <li class="wedo__item">
-              <img
-                src="./images/wedo2.jpg"
-                alt="робота над адаптивною версткою"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/wedo2-1x.jpg 1x, ./images/wedo2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/wedo2-1x.jpg"
+                  alt="член команди"
+                />
+              </picture>
               <div class="above-wrapper">
                 <b class="above-wrapper__text">Мобільні додатки</b>
               </div>
             </li>
 
             <li class="wedo__item">
-              <img
-                src="./images/wedo3.jpg"
-                alt="дівчина обирає колір"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/wedo3-1x.jpg 1x, ./images/wedo3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/wedo3-1x.jpg"
+                  alt="член команди"
+                />
+              </picture>
 
               <div class="above-wrapper">
                 <b class="above-wrapper__text">Дизайнерські рішення</b>
@@ -146,21 +164,30 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
+                  srcset="
+                    ./images/team1-desk-1x.jpg 1x,
+                    ./images/team1-desk-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
+                  srcset="
+                    ./images/team1-tablet-1x.jpg 1x,
+                    ./images/team1-tablet-2x.jpg 2x
+                  "
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
+                  srcset="
+                    ./images/team1-mobile-1x.jpg 1x,
+                    ./images/team1-mobile-2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
 
                 <img
                   class="team__img"
-                  src="./images/team1.jpg"
+                  src="./images/team1-mobile-1x.jpg"
                   alt="член команди"
                   width="270"
                   height="260"
@@ -208,13 +235,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team2.jpg"
-                alt="член команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team2-desk-1x.jpg 1x,
+                    ./images/team2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-tablet-1x.jpg 1x,
+                    ./images/team2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-mobile-1x.jpg 1x,
+                    ./images/team2-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team2-mobile-1x.jpg"
+                  alt="член команди"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team__specialty">Frontend Developer</p>
@@ -256,13 +307,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team3.jpg"
-                alt="член команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team3-desk-1x.jpg 1x,
+                    ./images/team3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-tablet-1x.jpg 1x,
+                    ./images/team3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-mobile-1x.jpg 1x,
+                    ./images/team3-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team3-mobile-1x.jpg"
+                  alt="член команди"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__specialty">Marketing</p>
@@ -304,13 +379,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team4.jpg"
-                alt="член команди"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team4-desk-1x.jpg 1x,
+                    ./images/team4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-tablet-1x.jpg 1x,
+                    ./images/team4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-mobile-1x.jpg 1x,
+                    ./images/team4-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team4-mobile-1x.jpg"
+                  alt="член команди"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__specialty">UI Designer</p>
