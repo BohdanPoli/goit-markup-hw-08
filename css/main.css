@@ -278,8 +278,6 @@ summary {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-  width: 100%;
 }
 
 h1,
@@ -305,6 +303,16 @@ a {
 
 address {
   font-style: normal;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 body {
@@ -673,22 +681,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  font-size: 24px;
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .navigation__item {
@@ -718,9 +738,7 @@ body {
 }
 
 .connects__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .connects__item:not(:last-child) {
@@ -771,10 +789,131 @@ body {
   border-radius: 2px;
 }
 
+.header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
 @media screen and (min-width: 1200px) {
   .header-btn {
     display: none;
   }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--primewhite);
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 15px 48px 40px;
+}
+
+.menu__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: scroll;
+}
+@media screen and (min-width: 480px) {
+  .menu__container {
+    max-width: 480px;
+  }
+}
+
+.menu__btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 8px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__btn:hover, .menu__btn:focus {
+  fill: var(--hoverbutton);
+  cursor: pointer;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.menu--current {
+  color: #2196f3;
+}
+
+.menu-connects__list {
+  margin-bottom: 64px;
+}
+
+.menu-connects__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-connects__link {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-connects__link--blue {
+  color: var(--accent-color);
+}
+
+.menu-connects__link--small {
+  font-size: 24px;
+}
+
+.menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-links__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.menu-links__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .icon-list {
@@ -1399,7 +1538,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 

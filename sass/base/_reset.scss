@@ -3,8 +3,6 @@
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-  width: 100%;
 }
 
 h1,
@@ -29,4 +27,14 @@ a {
 }
 address {
   font-style: normal;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
