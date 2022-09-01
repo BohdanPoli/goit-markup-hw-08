@@ -18,8 +18,8 @@
   padding: 10px 15px;
 
   @media screen and (min-width: 768px) {
-    padding: 21px 15px;
     @include centerflex();
+    padding: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -67,7 +67,7 @@
     color: var(--accent-color);
     cursor: pointer;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding: 32px 0;
   }
 }
