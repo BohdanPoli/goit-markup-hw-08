@@ -19,7 +19,7 @@
 
   @media screen and (min-width: 768px) {
     @include centerflex();
-    padding: 0;
+    padding: 0 15px;
   }
 
   @media screen and (min-width: 1200px) {
