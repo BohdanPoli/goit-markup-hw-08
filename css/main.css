@@ -715,6 +715,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
   }
 }
 
@@ -724,6 +725,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    font-size: 26px;
   }
 }
 
@@ -816,6 +818,7 @@ body {
 @media screen and (min-width: 1200px) {
   .connects__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
