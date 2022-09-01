@@ -17,17 +17,36 @@
   @include centerflex($jus: space-between);
   padding: 10px 15px;
 
+  @media screen and (min-width: 768px) {
+    padding: 21px 15px;
+    @include centerflex();
+  }
+
   @media screen and (min-width: 1200px) {
     @include centerflex();
   }
 }
 .header__logo {
   font-size: 24px;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
+.navigation {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
 .navigation__list {
   display: none;
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigation__item {
@@ -39,13 +58,15 @@
 
 .navigation__link {
   color: inherit;
-  padding: 32px 0;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
     cursor: pointer;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
   }
 }
 
@@ -55,10 +76,26 @@
 
 .connects__list {
   display: none;
-  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .connects__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .connects__link {
@@ -71,6 +108,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
   }
 }
 
