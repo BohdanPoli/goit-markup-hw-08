@@ -51,7 +51,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/background-image.jpg);
+      url(/images/desk-hero-1x.jpg);
   }
 
   @include retina {
@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img2x.jpg);
+      url(/images/desk-hero-2x.jpg);
   }
 }
 
