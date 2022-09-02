@@ -278,7 +278,6 @@ summary {
 img {
   display: block;
   max-width: 100%;
-  width: 100%;
 }
 
 h1,
@@ -1811,6 +1810,12 @@ body {
   }
 }
 
+.projects-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1838,7 +1843,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .projects-list__item {
-    width: 360px;
+    width: 370px;
   }
 }
 
@@ -1875,7 +1880,7 @@ body {
 
 .meta {
   border: 1px solid #eeeeee;
-  padding: 24px 20px;
+  padding: 20px 24px;
 }
 
 .meta__title {
