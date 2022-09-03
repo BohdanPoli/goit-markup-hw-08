@@ -39,6 +39,15 @@
   }
 }
 
+.projects-list__link--mod {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.meta--mod {
+  flex-grow: 2;
+}
+
 .projects-list__thumb {
   position: relative;
   overflow: hidden;
